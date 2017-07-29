@@ -3,7 +3,7 @@
 @mobile: ~"only screen and (max-width: 736px)";
 
 html, body, .container {
-  height: 100vh;
+  height: 100%;
 }
 
 body {
@@ -81,6 +81,11 @@ header {
     width: 50px;
     line-height: 20px;
     text-align: center;
+    padding: 0;
+
+    @media @mobile {
+      top: 60%;
+    }
 
     &.prev {
       left: 8px;
@@ -124,6 +129,7 @@ header {
 .slide {
   position: relative;
   height: 100%;
+  min-height: 500px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -163,11 +169,11 @@ header {
       right: 2.5%;
 
       h3 {
-        font-size: 28px;
+        font-size: 24px;
       }
 
       p {
-        font-size: 20px;
+        font-size: 18px;
       }
     }
   }
