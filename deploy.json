@@ -1,0 +1,22 @@
+{
+  "targets": [
+    {
+      "name": "prod",
+      "provider": "aws",
+      "config": {
+        "aws_access_key_id": "<ENTER AWS ACCESS KEY ID HERE>",
+        "aws_secret_access_key": "<ENTER AWS SECRET ACCESS KEY HERE>",
+        "s3_bucket": "<ENTER S3 BUCKET TO DEPLOY TO HERE>"
+      }
+    },
+    {
+      "name": "test",
+      "provider": "aws",
+      "config": {
+        "aws_access_key_id": "<ENTER AWS ACCESS KEY ID HERE>",
+        "aws_secret_access_key": "<ENTER AWS SECRET ACCESS KEY HERE>",
+        "s3_bucket": "<ENTER ANOTHER S3 BUCKET TO DEPLOY TO HERE>"
+      }
+    }
+  ]
+}

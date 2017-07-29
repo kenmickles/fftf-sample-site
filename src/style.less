@@ -1,0 +1,186 @@
+@import '~normalize.css/normalize.css';
+
+@mobile: ~"only screen and (max-width: 736px)";
+
+html, body, .container {
+  height: 100vh;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #cd040b;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  > article {
+    flex: 1;
+    background: #ccc;
+  }
+}
+
+header {
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  text-align: center;
+
+  img {
+    height: 33px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  @media @mobile {
+    img {
+      height: 18px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+  }
+}
+
+.slider, .siema, .siema > div, .siema > div > div {
+  height: 100%;
+}
+
+.slider {
+  background-color: #f6f6f6;
+  position: relative;
+
+  button {
+    border-radius: 100%;
+    background-color: #fff;
+    border: none;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    font-size: 24px;
+    height: 50px;
+    width: 50px;
+    line-height: 20px;
+    text-align: center;
+
+    &.prev {
+      left: 8px;
+    }
+
+    &.next {
+      right: 8px;
+    }
+
+    &:focus {
+      outline:0;
+    }
+  }
+
+  .cta {
+    position: absolute;
+    bottom: 7%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    
+    a {
+      background-color: #cd040b;
+      color: #fff;
+      border: none;
+      border: 6px solid #fff;
+      font-size: 40px;
+      padding: 10px 40px;
+      border-radius: 40px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-block;
+
+      @media @mobile {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.slide {
+  position: relative;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+
+  .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .caption {
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    right: 8%;
+    color: #fff;
+    text-shadow: 0 1px 0 #000;
+    padding: 20px;
+
+    h3 {
+      font-size: 48px;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 1.4;
+    }
+
+    @media @mobile {
+      top: 0;
+      left: 2.5%;
+      right: 2.5%;
+
+      h3 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.slide-1 {
+  background-image: url(./images/slide-1.jpg);
+}
+
+.slide-2 {
+  background-image: url(./images/slide-2.jpg);
+}
+
+.slide-3 {
+  background-image: url(./images/slide-3.jpg);
+}

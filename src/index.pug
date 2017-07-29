@@ -1,0 +1,43 @@
+doctype
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+    link(href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet")
+
+    title Verizon, stop throttling our videos!
+  body
+    .container
+      header
+        h1
+          img(src="images/verizon.png" alt="verizon")
+          span  stop throttling our videos!
+
+      article
+        .slider
+          .siema
+            .slide.slide-1
+              .overlay
+              .caption
+                h3 Hey, guess what?
+                p Verizon has been intentionally slowing down Netflix videos. They call it <a href="https://www.theverge.com/2017/7/21/16010766/verizon-netflix-throttling-statement-net-neutrality-title-ii">a "network test"</a>, but it's pretty clearly a bandwidth cap on online video.
+            .slide.slide-2
+              .overlay
+              .caption
+                h3 But doesn't that violate Net Neutrality?
+                p Probably. It certainly paves the way for the <a href="https://www.battleforthenet.com/">exact scenario</a> we've been warned about <a href="https://www.youtube.com/watch?v=fpbOEoRrHyU">again</a> and <a href="https://www.youtube.com/watch?v=92vuuZt7wak">again</a>: ISPs slowing down <a href="https://www.netflix.com/">the good stuff we want</a> in favor of <a href="http://www.businessinsider.com/inside-verizon-go90-an-video-app-mix-between-youtube-and-netflix-2017-3">the crappy stuff they own</a>.
+            .slide.slide-3
+              .overlay
+              .caption
+                h3 So what can I do? I heard the FCC was run by jerks now.
+                p Please <a href="#{petitionURL}">sign our petition</a> to Verizon.
+                p Let them know that if they keep up with these shenanigans, you'll cancel your service.
+
+          button.prev &lt;
+          button.next &gt;
+
+          .cta
+            a(href=petitionURL) Sign the petition
