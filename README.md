@@ -7,7 +7,7 @@ A simple static site generated via [Martinet](https://github.com/iceroad/martine
 (Assuming you already have [Node](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/lang/en/) installed)
 
 ```
-npm install -g martinet
+npm install -g @iceroad/martinet
 git clone git@github.com:kenmickles/fftf-sample-site.git
 cd fftf-sample-site
 yarn
