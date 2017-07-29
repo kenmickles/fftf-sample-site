@@ -2,5 +2,8 @@
   "dependencies": {
     "normalize.css": "^7.0.0",
     "siema": "^1.4.6"
+  },
+  "scripts": {
+    "deploy": "martinet build && rsync -avh dist/ 37i:~/www/fftf.37i.net/ --delete"
   }
 }
