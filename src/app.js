@@ -15,7 +15,6 @@ const slider = new Siema({
 })
 
 function resetSliderInterval() {
-  return
   clearInterval(sliderInterval)
   sliderInterval = setInterval(() => {
     slider.next()
