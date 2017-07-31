@@ -18,7 +18,7 @@ function resetSliderInterval() {
   clearInterval(sliderInterval)
   sliderInterval = setInterval(() => {
     slider.next()
-  }, 4000)
+  }, 5000)
 }
 
 document.addEventListener('DOMContentLoaded', () => {
